@@ -1,7 +1,8 @@
 [Unit]
-Description=halo
-After=network.target
-Wants=network.target
+Description=Halo
+Documentation=https://docs.halo.run
+After=network-online.target
+Wants=network-online.target systemd-networkd-wait-online.service
 
 [Service]
 Type=simple
