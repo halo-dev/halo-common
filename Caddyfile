@@ -1,1 +1,5 @@
-# Caddyfile
+https://www.simple.com {
+ gzip
+ tls xxxx@xxx.xx
+ proxy / http://ip:port
+}

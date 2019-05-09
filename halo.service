@@ -1,1 +1,16 @@
-# halo.service
+[Unit]
+Description=halo
+After=network.target
+Wants=network.target
+
+[Service]
+Type=simple
+ExecStart=java -server -jar jar-path
+ExecStop=/bin/kill -s QUIT $MAINPID
+Restart=always
+StandOutput=syslog
+
+StandError=inherit
+
+[Install]
+WantedBy=multi-user.target
