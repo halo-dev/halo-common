@@ -1,5 +1,7 @@
-https://www.simple.com {
+http://www.simple.com {
  gzip
  tls xxxx@xxx.xx
- proxy / http://ip:port
+ proxy / localhost:port {
+  transparent
+ }
 }
