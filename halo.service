@@ -1,12 +1,11 @@
-[Unit]
-Description=Halo
-Documentation=https://docs.halo.run
+Description=Halo Service
+Documentation=https://halo.run
 After=network-online.target
-Wants=network-online.target systemd-networkd-wait-online.service
+Wants=network-online.target
 
 [Service]
 Type=simple
-ExecStart=java -server -jar jar-path
+ExecStart=/usr/bin/java -server -jar jar-path
 ExecStop=/bin/kill -s QUIT $MAINPID
 Restart=always
 StandOutput=syslog
