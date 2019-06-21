@@ -25,6 +25,7 @@ services:
       - VIRTUAL_HOST=localhost  # 你的博客地址（务必修改）
       - LETSENCRYPT_HOST=localhost # 你的博客地址 （务必修改）
       - LETSENCRYPT_EMAIL=i@example.com # 证书所有者的邮箱，快过期时会提醒（务必修改）
+      - MAX_UPLOAD_SIZE=10m
     volumes:
       - ~/.halo:/root/.halo
 
