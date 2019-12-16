@@ -22,20 +22,6 @@
 
 > 该文件为 Systemd 的文件，用于把 Halo 注册成为系统服务，方便管理 Halo 的运行状态。
 
-## tool.sh
+## halo-pm2.json
 
-> 该文件为 Halo 的运行脚本，使用方法：
-
-```bash
-# 启动 Halo
-./tool.sh start
-
-# 停止 Halo
-./tool.sh stop
-
-# 重启 Halo
-./tool.sh restart
-
-# 查看状态
-./tool.sh status
-```
+> 使用 PM2 管理应用的配置模板。
