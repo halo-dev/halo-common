@@ -1,17 +1,30 @@
 server:
   port: 8090
+
+  # Response data gzip.
+  compression:
+    enabled: false
 spring:
   datasource:
-    type: com.zaxxer.hikari.HikariDataSource
+
+    # H2 database configuration.
     driver-class-name: org.h2.Driver
     url: jdbc:h2:file:~/.halo/db/halo
     username: admin
     password: 123456
 
-  # H2 Database 的控制台相关配置。
+  # H2 database console configuration.
   h2:
     console:
       settings:
         web-allow-others: false
       path: /h2-console
       enabled: false
+
+halo:
+
+  # Your admin client path is https://your-domain/{admin-path}
+  admin-path: admin
+
+  # memory or level
+  cache: memory
