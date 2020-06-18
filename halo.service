@@ -4,6 +4,7 @@ After=network-online.target
 Wants=network-online.target
 
 [Service]
+User=halo
 Type=simple
 ExecStart=/usr/bin/java -server -Xms256m -Xmx256m -jar JAR_PATH
 ExecStop=/bin/kill -s QUIT $MAINPID
