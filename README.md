@@ -8,11 +8,15 @@
 
 ## nginx.conf
 
-> 该文件为 Nginx 的配置文件，可供参考。
+> 该文件为 Nginx 的示例配置文件。
 
 ## Caddyfile
 
-> 该文件为 Caddy 的配置文件，可供参考。
+> 该文件为 Caddy 的示例配置文件。
+
+## Caddyfile2.x
+
+> 该文件为 Caddy 2.x 的示例配置文件。
 
 ## docker-compose.yaml
 
