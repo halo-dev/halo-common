@@ -4,7 +4,7 @@
 
 ## application-template.yaml
 
-> 该文件为 Halo 的用户配置文件，放置于服务器的 `~/.halo` 下，可覆盖应用本身的配置。
+> 该文件为 Halo 的用户配置文件，放置于服务器的 `~/.halo` 下，可覆盖应用本身的配置。需要重命名为 `application.yaml`。
 
 ## nginx.conf
 
