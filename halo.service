@@ -1,12 +1,13 @@
+[Unit]
 Description=Halo Service
-Documentation=https://halo.run
+Documentation=https://docs.halo.run
 After=network-online.target
 Wants=network-online.target
 
 [Service]
-User=halo
 Type=simple
-ExecStart=/usr/bin/java -server -Xms256m -Xmx256m -jar JAR_PATH
+User=USER
+ExecStart=/usr/bin/java -server -Xms256m -Xmx256m -jar YOUR_JAR_PATH
 ExecStop=/bin/kill -s QUIT $MAINPID
 Restart=always
 StandOutput=syslog
