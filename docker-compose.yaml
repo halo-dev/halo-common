@@ -16,7 +16,7 @@ services:
 
   halo:
     restart: always
-    image: ruibaby/halo
+    image: halohub/halo
     container_name: halo
     ports:
       - 8090:8090
