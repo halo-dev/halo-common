@@ -1,4 +1,4 @@
-https://www.simple.com {
+https://www.yourdomain.com {
  gzip
  tls xxxx@xxx.xx
  proxy / localhost:port {
