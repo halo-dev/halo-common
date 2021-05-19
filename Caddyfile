@@ -1,7 +1,7 @@
 https://www.yourdomain.com {
  gzip
- tls xxxx@xxx.xx
- proxy / localhost:port {
+ tls your@email.com
+ proxy / localhost:8090 {
   transparent
  }
 }
