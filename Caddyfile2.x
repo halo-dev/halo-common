@@ -1,4 +1,4 @@
-www.youdomain.com
+www.yourdomain.com
 
 encode gzip
 
